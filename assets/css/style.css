@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif !important;
   color: #444444;
 }
 
@@ -118,8 +118,8 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.8);
   padding: 8px 0 12px 0;
   transition: 0.3s;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif !important;
 }
 
 .nav-menu > ul > li + li {
@@ -474,6 +474,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
 .about h3 {
   font-weight: 400;
   font-size: 34px;
@@ -498,7 +502,7 @@ section {
 }
 
 .about .icon-box p {
-  font-size: 15px;
+  font-size: 17px;
   color: #848484;
   margin-left: 60px;
 }
