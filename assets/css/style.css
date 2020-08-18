@@ -26,6 +26,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 375px) {
+  h3 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 320px) {
+  h3 {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 2.4rem !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
