@@ -26,23 +26,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-@media (max-width: 375px) {
-  h3 {
-    font-size: 1.5rem !important;
-  }
-}
 
-@media (max-width: 320px) {
-  h3 {
-    font-size: 1.3rem !important;
-  }
-}
 
-@media (max-width: 414px) {
-  h1 {
-    font-size: 2.4rem !important;
-  }
-}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -106,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   max-height: 40px;
 }
+
 
 @media (max-width: 992px) {
   #header {
@@ -240,6 +231,7 @@ h1, h2, h3, h4, h5, h6 {
   .nav-menu .drop-down .drop-down > a:after {
     content: "\ea9d";
   }
+  
 }
 
 /* Mobile Navigation */
@@ -439,6 +431,9 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+  #header > div > div > h3 {
+    padding-top: 8px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -458,8 +453,89 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+  #header > div > div > h3 {
+    padding-top: 5px;
+  }
 }
 
+@media (max-width: 414px) {
+  h1 {
+    font-size: 2.4rem !important;
+  }
+  #features > div > h1 {
+    font-size: 2.2rem !important;
+  }
+  #portfolio-flters > li {
+    font-size: 16px !important;
+  }
+  #contact > div.container > h1 {
+    font-size: 2.2rem !important;
+  }
+  #header > div {
+    padding-top: 5px;
+  }
+  #header > div > div > h3 {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  
+}
+
+@media (max-width: 360px) {
+  #contact > div.container > h1 {
+    font-size: 2.3rem !important;
+}
+  #portfolio > div > h1 {
+    font-size: 2.5rem !important;
+  }
+  #services > div > h1 {
+    font-size: 2.7rem !important;
+  }
+  #features > div > h1 {
+    font-size: 2.3rem !important;
+  }
+  #about > div > div > div.col-xl-6.col-lg-5.pt-5.pt-lg-0 > h1 {
+    font-size: 2.6rem !important;
+  }
+  #header > div {
+    padding-top: 7px;
+  }
+}
+@media (max-width: 320px) {
+  h3 {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 280px) {
+  h3 {
+    font-size: 18px !important;
+  }
+  #header > div {
+    padding-top: 10px;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+  #hero h2 {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #about > div > div > div.col-xl-6.col-lg-5.pt-5.pt-lg-0 > h1 {
+    font-size: 2.3rem !important;
+  }
+  .about .icon-box p {
+    font-size: 13px !important;
+    color: #848484;
+    margin-left: 60px;
+  }
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
