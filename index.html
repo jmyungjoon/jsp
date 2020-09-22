@@ -763,7 +763,18 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  
+  <script>
+    function loadProfile(){
+    const profile = localStorage.getItem("profile");
+    if(profile === "admin"){
+        $('#loginModal').modal('hide');
+        location.replace("./forms/tables.html"); 
+    } else {
+      }
+    }
+  </script>
+  
 </body>
 
 </html>
