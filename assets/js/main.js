@@ -166,4 +166,63 @@
     easing: "ease-in-out"
   });
 
+  function loadProfile(){
+    const profile = localStorage.getItem("profile");
+    if(profile === "admin"){
+        $('#loginModal').modal('hide');
+        location.replace("./tables.html"); 
+    } else {
+      }
+    }
+
+    $(document).ready(function(){
+      $('#login_form').on("submit", function(event){  
+          event.preventDefault();  
+          $.ajax({  
+              url:"./forms/login.php",
+              method:"POST", 
+              dataType:'json',  
+              data:$('#login_form').serialize(),  
+              success:function(data){
+                  $('#login_form')[0].reset(); 
+                  if(data['data'] == true){
+                      const profile = "profile";
+                      function saveProfile(text){
+                      localStorage.setItem(profile, text);
+                      }
+                      saveProfile("admin");
+                    location.replace("./forms/tables.html"); 
+                  } else {
+                      alert("관리자 권한이 없습니다.");
+                      location.replace("./index.html");
+                     }
+                  }
+              });
+      });
+    });
+
+    $(document).on('click', '.remove_row', function() {
+      let td = event.target;
+      console.log(td);
+      let tr = td.parentNode.parentNode.children[0];
+      console.log(tr.innerHTML);
+      let no=tr.innerHTML;
+      let r=confirm(no+"가 삭제 됩니다. 삭제 후 복구를 할 수 없습니다.");
+      if(r == true) { 
+        tr.parentNode.style="display:none";
+        $.ajax({  
+          url:"./forms/deletedb.php",
+          method:"POST", 
+          data:'id='+no,
+          success:function(data){
+            document.getElementById('deleted').innerHTML=data; 
+
+          }
+        });
+      } else { 
+        alert("다시 선택해 주세요.");
+      }
+    });
+
+  
 })(jQuery);
